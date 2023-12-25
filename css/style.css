@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; */
+}
+/* for mobile devices */
+@media screen and (min-width: 200px) {
+  .hero {
+    background: url(/images/background_w320.jpg);
+    background-repeat: no-repeat;
+    background: fixed;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  h1 {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0.1rem;
+  }
+  p {
+    box-shadow: 0 0 100px rgb(3, 3, 3);
+    width: 200px;
+    margin: 0 auto;
+    padding: 10px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(42, 42, 43);
+  }
+}
+
+/* for tablets */
+@media screen and (min-width: 320px) {
+  .hero {
+    background: url(/images/background_w853.jpg);
+    background-repeat: no-repeat;
+  }
+}
+
+/* for small desktopts */
+
+@media screen and (min-width: 853px) {
+  .hero {
+    background: url(/images/background_w1228.jpg);
+    background-repeat: no-repeat;
+  }
+}
+
+/* for desktops */
+@media screen and (min-width: 1228px) {
+  .hero {
+    background: url(/images/background_w1440.jpg);
+    background-repeat: no-repeat;
+  }
+}
